@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underworld - Home</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="bodyscripts.js"></script>
+    <script src="https://jsgames-servers.aws.com/pre-connect/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="loader_bg">
+        <svg class="loader" focusable="false" viewBox="0 0 32 32" aria-hidden="true"><g fill="#00A2F1"><path opacity=".25" d="M16 0a16 16 0 0 0 0 32 16 16 0 0 0 0-32m0 4a12 12 0 0 1 0 24 12 12 0 0 1 0-24"></path><path d="M16 0a16 16 0 0 1 16 16h-4A12 12 0 0 0 16 4z"><animateTransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite"></animateTransform></path></g></svg>
+    </div>
+    
+    <nav>
+        <div class="header">
+            <div class="left-container">
+                <img class="logo" src="/images/websitelogo-black.png" onClick="location.href='home.html'">
+            </div>
+
+            <div class="nav-links-container-menu">
+                <a href="" class="nav-header-links">Menu</a>
+                <img onClick="location.href='home.html'" class="nav-l-img" src="https://img.icons8.com/bubbles/100/000000/menu-2.png"/>
+            </div>
+
+            <div class="nav-links-container">
+                <a href="" class="nav-header-links">Home</a>
+                <img onClick="location.href='home.html'" class="nav-l-img" src="https://img.icons8.com/color/48/000000/cottage.png"/>
+            </div>
+
+            <div class="nav-links-container">
+                <a href="" class="nav-header-links">News</a>
+                <img onClick="location.href='home.html'" class="nav-l-img" src="https://img.icons8.com/fluency/48/000000/news.png"/>
+            </div>
+
+            <div class="nav-links-container">
+                <a href="" class="nav-header-links">Game Proggress</a>
+                <img onClick="location.href='home.html'" class="nav-l-img" src="https://img.icons8.com/color/48/000000/submit-progress--v1.png"/>
+            </div>
+
+            <div class="nav-links-container">
+                <a href="" class="nav-header-links">Support</a>
+                <img onClick="location.href='home.html'" class="nav-l-img" src="https://img.icons8.com/fluency/48/000000/help.png"/>
+            </div>
+
+            <div class="right-container">
+                <div class="nav-links-container">
+                    <!--<a href="" class="nav-header-links" id="bg1212">Buy Game</a>-->
+                    <!--<img class="nav-l-img" src="https://img.icons8.com/color-glass/48/000000/user.png"/>-->
+                </div>
+                <!--<a href="" class="button-style-preorder">\ Buy Game /</a>-->
+            </div>
+        </div>
+    </nav>
+    <!--Body Content-->
+    <div id="section1-container">
+        <span id="s1-span">Our app uses cookies to ensure the best user experiance for you, and to manage and create better services.</span>
+        <div class="right-container">
+            <button id="close-cookie-notie" onclick="hidecookiebanner()">X</button>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById("close-cookie-notie");
+
+        function hidecookiebanner () {
+            document.getElementById("section1-container").style.display = "none";
+        }
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1000);
+
+    </script>
+
+</body>
+</html>
